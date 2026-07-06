@@ -1,10 +1,14 @@
-package main
+package handlers
 
 import (
 	"ascii-art-web-dockerize/ascii"
 	"html/template"
 	"net/http"
 )
+
+type PageData struct {
+	Result string
+}
 
 func ArtHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {

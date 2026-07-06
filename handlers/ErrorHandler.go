@@ -1,9 +1,14 @@
-package main
+package handlers
 
 import (
 	"html/template"
 	"net/http"
 )
+
+type ErrorData struct{
+	Message string
+	Status int
+}
 
 func ErrorHandler(w http.ResponseWriter, message string, code int) {
 	tmpl, err := template.ParseFiles(
