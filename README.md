@@ -10,7 +10,7 @@ This project builds on the original `ascii-art-web` server and focuses on **cont
 - Build a Docker **image** from that Dockerfile.
 - Run the image as a Docker **container**.
 - Apply **metadata** (labels) to Docker objects for traceability.
-- Clean up unused Docker objects (dangling images, stopped containers, unused build cache) — i.e. garbage collection.
+- Clean up unused Docker objects (dangling images, stopped containers, unused build cacfhe) — i.e. garbage collection.
 
 ## 🧰 Tech Stack
 
