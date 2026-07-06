@@ -1,0 +1,20 @@
+{{define "content"}}
+<div class="container">
+    <h1>ASCII ART GENERATOR</h1>
+    <form action="/ascii-art" method="post">
+        <textarea name="text" id="text"></textarea>
+        <br><br>
+        <label for="banner">Choose banner format:</label>
+        <br>
+        <select name="banner" id="banner">
+            <option value="standard">standard</option>
+            <option value="shadow">shadow</option>
+            <option value="thinkertoy">thinkertoy</option>
+        </select>
+        <br><br>
+        <label for="submit">generate art;</label>
+        <br>
+        <button type="submit">submit</button>
+    </form>
+</div>
+{{end}}

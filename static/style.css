@@ -1,0 +1,55 @@
+body {
+    background-color: lightblue;
+color: rgb(20, 15, 15);
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 80vh;
+}
+
+.container {
+background-color: darkcyan;
+padding: 50px;
+border-radius: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+@media (max-width: 600px) {
+.container {
+padding: 20px;
+  }
+}
+
+textarea {
+background-color: rgb(162, 208, 214);
+color: rgb(20, 20, 20);
+}
+
+select {
+background-color: rgb(182, 161, 192);
+color: black;
+transition: transform 0.2s; 
+}
+
+select:hover {
+transform: scale(1.1);
+}
+
+button {
+background-color: rgb(182, 161, 192);
+color: black;
+transition: transform 0.2s; 
+}
+
+button:hover {
+transform: scale(1.1); 
+}
+
+pre {
+color: black;
+}
