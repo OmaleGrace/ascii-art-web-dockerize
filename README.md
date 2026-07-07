@@ -1,4 +1,4 @@
-# ASCII Art Web — Dockerize
+# ASCII-Art-Web—Dockerize
 
 A containerized version of the **ascii-art-web** project. It takes the existing Go web server (which renders text into ASCII art) and packages it into a Docker image so it can be built, shipped, and run consistently on any machine — no local Go installation required.
 
@@ -34,13 +34,13 @@ cd ascii-art-web-dockerize
 ### Build the image
 
 ```bash
-docker build -t ascii-art-web:latest .
+docker build -t ascii-art-web-dockerize:latest .
 ```
 
 ### Run the container
 
 ```bash
-docker run -d -p 8080:8080 --name ascii-art-web ascii-art-web:latest
+docker run -d -p 8080:8080 --name ascii-art-web ascii-art-web-dockerize:latest
 ```
 
 Then open your browser at [http://localhost:8080](http://localhost:8080).
@@ -48,8 +48,8 @@ Then open your browser at [http://localhost:8080](http://localhost:8080).
 ### Stop and remove the container
 
 ```bash
-docker stop ascii-art-web
-docker rm ascii-art-web
+docker stop ascii-art-web-dockerize
+docker rm ascii-art-web-dockerize
 ```
 
 ## 🏷️ Metadata

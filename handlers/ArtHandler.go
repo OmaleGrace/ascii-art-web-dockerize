@@ -24,7 +24,7 @@ func ArtHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	file := "banner/" + banner + ".txt"
+	file := "../banner/" + banner + ".txt"
 	Lban, err := ascii.LoadBanner(file)
 	if err != nil {
 		ErrorHandler(w, "Error Loading Banner", http.StatusInternalServerError)
@@ -37,8 +37,8 @@ func ArtHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	tmpl, err := template.ParseFiles(
-		"templates/base.html",
-		"templates/output.html",
+		"../templates/base.html",
+		"../templates/output.html",
 	)
 
 	if err != nil {

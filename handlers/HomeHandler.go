@@ -17,8 +17,8 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	tmpl, err := template.ParseFiles(
-		"templates/base.html",
-		"templates/input.html",
+		"../templates/base.html",
+		"../templates/input.html",
 	)
 
 	if err != nil {
