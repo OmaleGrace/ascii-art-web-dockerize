@@ -27,7 +27,7 @@ This project builds on the original `ascii-art-web` server and focuses on **cont
 ### Clone the repository
 
 ```bash
-git clone https://github.com/omalegrace2009-g/ascii-art-web-dockerize.git
+git clone https://github.com/OmaleGrace/ascii-art-web-dockerize.git
 cd ascii-art-web-dockerize
 ```
 
